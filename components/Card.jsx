@@ -3,8 +3,7 @@ import styles from './Card.module.css'
 import { Link } from 'react-router-dom'
 export default function Card({ ...props }) {
     const { name, sprites, types } = props
-    const color = types[0].type.name
-    const back= styles.container
+    
     
     return (
         <div className={

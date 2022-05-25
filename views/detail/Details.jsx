@@ -32,7 +32,7 @@ export default function Details() {
   }
   return (
     <div className={styles.container}>
-      <Link to={"/"}>
+      <Link to={"/pokedex"}>
         <Logo />
       </Link>
       <div className={styles.containerImage}>

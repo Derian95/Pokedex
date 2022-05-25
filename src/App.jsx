@@ -13,6 +13,7 @@ function App() {
   const [namePokemon, setNamePokemon] = useState("");
   const [previous, setPrevious] = useState("");
   const [total, setTotal] = useState(20);
+  const [loading, setLoading] = useState(true);
 
 
   const getInformationPokemon = async (url) => {
@@ -34,7 +35,7 @@ function App() {
     })
     const result2 = await Promise.all(promises)
     setPost(result2)
-    
+    setLoading(false)
 
   }
 
@@ -75,16 +76,16 @@ function App() {
   }, []);
  
 
+if(loading){return <p>Cargando...</p>}  
   return (
     <div className="App" >
       <Logo getPokemons={getPokemons}/>
      <Search set={namePokemon} setData={setNamePokemon} search={searchPokemon}/>
       <Pagination next={next} previous={previous} changuePag={changuePag} op={addPages} re={removePages} total={total}  />
-      {post==[] ?(<p>No existe este pokemon raa</p>):
-      (<PokemonList data={post} />
-      )
+      <PokemonList data={post} />
       
-    }
+      
+    
     </div>
   )
 }
