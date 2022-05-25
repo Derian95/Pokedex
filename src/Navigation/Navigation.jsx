@@ -7,7 +7,7 @@ export default function Navigation() {
   return (
     <BrowserRouter>
     <Routes>
-        <Route path="/pokedex" element={<App />} />
+        <Route path="/Pokedex/" element={<App />} />
         <Route  path="/Details/:pokemonid" element={<Details />} />
     </Routes>
     </BrowserRouter>
