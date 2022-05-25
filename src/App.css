@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-color: #1c1d1d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+p{
+  font-size: 30px;
+}
+.logo{
+  width:  300px;
+  height: 100px;
+  
+}

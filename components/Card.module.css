@@ -1,0 +1,35 @@
+.container{
+    
+    background-color: rgba(68, 68, 68, 0.76);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cardData{
+    position: relative;
+    bottom: 50px;
+}
+.title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+.type{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image{
+    height: 170px;
+    width: 80%;
+}
+p{
+    font-size: .8rem;
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(165, 164, 164);
+}
